@@ -1,0 +1,44 @@
+body {
+    margin-left: 15em;
+    margin-right: 15em;
+}
+
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    margin: 10px;
+}
+
+#navbar-title {
+    margin-right: auto;
+}
+
+@media all and (max-width: 800px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #navbar {
+        justify-content: space-around;
+    }
+}
+
+/* Small screens */
+@media all and (max-width: 500px) {
+    body {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #navbar {
+      /* On small screens, we are no longer using row direction but column */
+      flex-direction: column;
+      align-items: center;
+    }
+}
+
